@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='custom.css') }}"
+    />
+
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+
+    <br />
+    <div class="container-fluid">
+        <h3 class="float-md-start mb-0">CyberRebels</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a>
+        </nav>
+    </div>
+
+
+  <div class="container font-family-sans-serif">
+    {% block content %}{% endblock %}
+  </div>
+</html>
