@@ -3,21 +3,71 @@
 {% block title %}Home Page{% endblock %}
 
 {% block content %}
-<!-- <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <div class="text-center">
-      <h1>Cover your page.</h1>
-      <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-      </p>
-    </div>
-  
-    <footer class="mt-auto text-white-50">
-      <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-    </footer>
-</div> -->
-
-<div class="container-sm text-center">
-    CyberRebels
+<br />
+<br />
+<div class="text-end">
+  <h1 class="display-4">Bring your business <u><b>Online</b></u>.</h1>
+  <h1 class="display-4"><u><b>Secure</b></u> and <u><b>Protect</b></u> your network.</h1>
+  <h1 class="display-4">Increase your <u><b>Online Presence</b></u>.</h1>
+  <br />
+  <br />
+  <h6 class="lead">Take the next step with us.</h6>
 </div>
+
+<br />
+<br />
+<br />
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='luke.jpg') }}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Luke Zarco</h5>
+        <h6 class="lead">Network Engineer</h6>
+        <p class="card-text">Ensuring minimal downtime and one of a kind hosting options.</p>
+        <p class="card-text"><small class="text-muted">zarkoluke@cyberebels.com</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='shane.jpg') }}" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Shane Westphelan</h5>
+        <h6 class="lead">Security Analyst</h6>
+        <p class="card-text">Bringing Security and visual appeal to our web projects.</p>
+        <p class="card-text"><small class="text-muted">shane.westphelan@cyberebels.com</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br />
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{{ url_for('static', filename='cj.jpg') }}" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Christian Bates</h5>
+        <h6 class="lead">Web Developer</h6>
+        <p class="card-text">Passionate about creating user-friendly and efficient websites.</p>
+        <p class="card-text"><small class="text-muted">cjbates@cyberebels.com</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
 {% endblock %}
