@@ -17,16 +17,32 @@
 
     <br />
     <div class="container-fluid">
-        <h3 class="float-md-start mb-0">CyberRebels</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Contact</a>
+        <nav class="navbar navbar-expand-sm">
+            <a>
+              <img src="{{ url_for('static', filename='logo.png') }}" width="225" height="110"/>
+            </a>
+            <ul class="navbar-nav ms-auto">
+              <li>
+                <a class="navbar-brand" href="#">
+                  <button type="button" class="btn btn-dark">Services</button>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-brand" href="#">
+                  <button type="button" class="btn btn-dark">About Us</button>
+                </a>
+              </li>
+              <li>
+                <a class="navbar-brand" href="#">
+                  <button type="button" class="btn btn-dark">Contact Us</button>
+                </a>
+              </li>
+            </ul>
         </nav>
     </div>
 
 
-  <div class="container font-family-sans-serif">
+  <div class="container-fluid font-family-sans-serif">
     {% block content %}{% endblock %}
   </div>
 </html>
