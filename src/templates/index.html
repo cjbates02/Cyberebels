@@ -5,69 +5,97 @@
 {% block content %}
 <br />
 <br />
-<div class="text-end">
-  <h1 class="display-4">Bring your business <u><b>Online</b></u>.</h1>
-  <h1 class="display-4"><u><b>Secure</b></u> and <u><b>Protect</b></u> your network.</h1>
-  <h1 class="display-4">Increase your <u><b>Online Presence</b></u>.</h1>
-  <br />
-  <br />
-  <h6 class="lead">Take the next step with us.</h6>
-</div>
-
-<br />
-<br />
-<br />
-
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
+<div class="container-fluid">
+  <div class="row">
+    <!-- Image column -->
     <div class="col-md-4">
-      <img src="{{ url_for('static', filename='luke.jpg') }}" class="img-fluid rounded-start" alt="...">
+      <div class="row">
+        <div class="col-md-12">
+          <br />
+          <img src="{{ url_for('static', filename='internet-logo.png') }}" class="img-fluid" alt="Server Image" style="padding-right: 30px;">
+        </div>
+      </div>
     </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Luke Zarco</h5>
-        <h6 class="lead">Network Engineer</h6>
-        <p class="card-text">Ensuring minimal downtime and one of a kind hosting options.</p>
-        <p class="card-text"><small class="text-muted">zarkoluke@cyberebels.com</small></p>
+    
+    <div class="col-md-8" style="padding-top: 30px;">
+      <div class="text-start" style="padding-left: 70px;">
+        <h1 class="display-4">Bring your business <u><b>Online</b></u>.</h1>
+        <h1 class="display-4"><u><b>Secure</b></u> and <u><b>Protect</b></u> your network.</h1>
+        <h1 class="display-4">Increase your <u><b>Online Presence</b></u>.</h1>
+        <br />
+        <br />
+        <h6 class="lead">Take the next step with us.</h6>
       </div>
     </div>
   </div>
 </div>
-
 <br />
 
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="{{ url_for('static', filename='shane.jpg') }}" class="img-fluid rounded-start">
-    </div>
+  
+
+<br />
+<br />
+<br />
+<div class="container">
+  <div class="row">
     <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Shane Westphelan</h5>
-        <h6 class="lead">Security Analyst</h6>
-        <p class="card-text">Bringing Security and visual appeal to our web projects.</p>
-        <p class="card-text"><small class="text-muted">shane.westphelan@cyberebels.com</small></p>
+      <!-- First card -->
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='luke.jpg') }}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Luke Zarco</h5>
+              <h6 class="lead">Network Engineer</h6>
+              <p class="card-text">Ensuring minimal downtime and one of a kind hosting options.</p>
+              <p class="card-text"><small class="text-muted">zarkoluke@cyberebels.com</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='shane.jpg') }}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Shane Westphelan</h5>
+              <h6 class="lead">Security Analyst</h6>
+              <p class="card-text">Bringing Security and visual appeal to our web projects.</p>
+              <p class="card-text"><small class="text-muted">shane.westphelan@cyberebels.com</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{ url_for('static', filename='cj.jpg') }}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">CJ Bates</h5>
+              <h6 class="lead">Web Developer</h6>
+              <p class="card-text">Passionate about creating user-friendly and efficient websites.</p>
+              <p class="card-text"><small class="text-muted">cjbates@cyberebels.com</small></p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-<br />
-
-<div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
     <div class="col-md-4">
-      <img src="{{ url_for('static', filename='cj.jpg') }}" class="img-fluid rounded-start">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Christian Bates</h5>
-        <h6 class="lead">Web Developer</h6>
-        <p class="card-text">Passionate about creating user-friendly and efficient websites.</p>
-        <p class="card-text"><small class="text-muted">cjbates@cyberebels.com</small></p>
+      <div class="row">
+        <div class="col-md-12">
+          <br />
+          <img src="{{ url_for('static', filename='server.png') }}" class="img-fluid" alt="Server Image" style="padding-top: 50px;">
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 {% endblock %}
+
