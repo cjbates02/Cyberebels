@@ -39,7 +39,7 @@
     <br />
     <div class="container-fluid">
         <nav class="navbar navbar-expand-sm">
-            <a>
+            <a href="{{ url_for('index') }}">
               <img src="{{ url_for('static', filename='logo.png') }}" width="225" height="110"/>
             </a>
             <ul class="navbar-nav ms-auto">
@@ -54,7 +54,7 @@
                 </a>
               </li>
               <li>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="{{url_for('contact_form')}}">
                   <button type="button" class="btn btn-dark">Contact Us</button>
                 </a>
               </li>

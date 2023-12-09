@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form class="row g-3" method="post">
+    <div class="col-md-6">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+    </div>
+    <div class="col-md-6">
+        <label class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+    </div>
+    <div class="form-group">
+        <label class='form-group' for="inquiry">Describe your inquiry:</label>
+        <textarea class="form-control" id="inquiry" name="inquiry" rows="4" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary form-group text-white">Submit Inquiry</button>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-success" role="alert">{{ message }}</div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</form>
+{% endblock %}
